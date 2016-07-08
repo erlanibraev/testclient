@@ -1,9 +1,6 @@
 package kz.ksi.factor.test;
 
-import kz.factor.resources.tofischema.GetMessageRequest;
-import kz.factor.resources.tofischema.GetMessageResponse;
-import kz.factor.resources.tofischema.MessagePort;
-import kz.factor.resources.tofischema.MessagePortService;
+import kz.factor.resources.tofischema.*;
 
 /**
  * Created by Erlan.Ibraev on 05.07.2016.
@@ -14,10 +11,10 @@ public class Main {
         MessagePortService service = new MessagePortService();
         MessagePort port = service.getMessagePortSoap11();
 
-        GetMessageRequest request = new GetMessageRequest();
-        GetMessageResponse response = port.getMessage(request);
+        GetDataRequest request = new GetDataRequest();
+        GetDataResponse response = port.getData(request); //port.;
 
-        System.out.println(response.toString());
+        // System.out.println(response.toString());
 
     }
 }
