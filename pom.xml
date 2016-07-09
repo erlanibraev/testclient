@@ -74,7 +74,7 @@
                             <sourceRoot>${project.build.directory}/generated-sources/java/</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>http://localhost:8080/ws/message.wsdl</wsdl>
+                                    <wsdl>http://localhost:9010/ws/test.wsdl</wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
